@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-alabaster: #FAF8F6;
+  --color-porcelain: #FFFFFF;
+  --color-pearl: #F2EEEB;
+  --color-linen: #E8E1DB;
+  --color-silk: #DED6CE;
+  --color-ink: #1C1917;
+  --color-taupe: #6B625C;
+  --color-rosewood: #7C4D59;
+  --color-rosewood-dark: #643B46;
+  --color-champagne: #9E8268;
+}
+
+@layer base {
+  html {
+    background-color: #FAF8F6;
+    color: #1C1917;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #FAF8F6;
+    color: #1C1917;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  button, a, input, select, textarea {
+    outline-color: #7C4D59;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

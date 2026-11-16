@@ -1,0 +1,6 @@
+{
+  "name": "Cloudnine Events",
+  "description": "Sydney-based luxury event styling — bespoke balloon arrangements, linen signage, and event draping with an interactive custom quote studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
